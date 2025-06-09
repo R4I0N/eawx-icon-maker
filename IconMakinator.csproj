@@ -1,0 +1,248 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fighters\squadrons_-_0.3x.png" />
+    <None Remove="Resources\Fighters\squadrons_-_0.5x.png" />
+    <None Remove="Resources\Fighters\squadrons_-_1x.png" />
+    <None Remove="Resources\Fighters\squadrons_-_2x.png" />
+    <None Remove="Resources\Fighters\squadrons_-_3x.png" />
+    <None Remove="Resources\Fighters\units_-_bomber.png" />
+    <None Remove="Resources\FotRepublic\hire_-_admiral.png" />
+    <None Remove="Resources\FotRepublic\hire_-_clone.png" />
+    <None Remove="Resources\FotRepublic\hire_-_clonecommando.png" />
+    <None Remove="Resources\FotRepublic\hire_-_general.png" />
+    <None Remove="Resources\FotRepublic\hire_-_moff.png" />
+    <None Remove="Resources\FotRepublic\retirebase_-_admiral.png" />
+    <None Remove="Resources\FotRepublic\retirebase_-_clone.png" />
+    <None Remove="Resources\FotRepublic\retirebase_-_clonecommando.png" />
+    <None Remove="Resources\FotRepublic\retirebase_-_general.png" />
+    <None Remove="Resources\FotRepublic\retirebase_-_moff.png" />
+    <None Remove="Resources\Imperial\AdminLeader.png" />
+    <None Remove="Resources\Imperial\GoldBackground.png" />
+    <None Remove="Resources\Imperial\Leader.png" />
+    <None Remove="Resources\Imperial\LeaderSSD.png" />
+    <None Remove="Resources\Imperial\LeaderStructure.png" />
+    <None Remove="Resources\Imperial\SIlverBackground.png" />
+    <None Remove="Resources\Imperial\SpymasterLeader.png" />
+    <None Remove="Resources\Imperial\SSD.png" />
+    <None Remove="Resources\Imperial\Warlord.png" />
+    <None Remove="Resources\MiscUnits\infantry_-_assault.png" />
+    <None Remove="Resources\MiscUnits\infantry_-_commander.png" />
+    <None Remove="Resources\MiscUnits\infantry_-_elite_guard.png" />
+    <None Remove="Resources\MiscUnits\infantry_-_heavy.png" />
+    <None Remove="Resources\MiscUnits\infantry_-_sniper.png" />
+    <None Remove="Resources\MiscUnits\infantry_-_support.png" />
+    <None Remove="Resources\MiscUnits\units_-_armored.png" />
+    <None Remove="Resources\MiscUnits\units_-_armored_shielded.png" />
+    <None Remove="Resources\MiscUnits\units_-_battleship.png" />
+    <None Remove="Resources\MiscUnits\units_-_carrier.png" />
+    <None Remove="Resources\MiscUnits\units_-_fighter_tender.png" />
+    <None Remove="Resources\MiscUnits\units_-_fleet_tender.png" />
+    <None Remove="Resources\MiscUnits\units_-_interdictor.png" />
+    <None Remove="Resources\MiscUnits\units_-_pdf.png" />
+    <None Remove="Resources\MiscUnits\units_-_research.png" />
+    <None Remove="Resources\MiscUnits\units_-_rocket-missile.png" />
+    <None Remove="Resources\MiscUnits\units_-_sensor.png" />
+    <None Remove="Resources\MiscUnits\units_-_shielded.png" />
+    <None Remove="Resources\MiscUnits\units_-_star_forge_refit.png" />
+    <None Remove="Resources\MiscUnits\units_-_weird_refit.png" />
+    <None Remove="Resources\NewRepublic\hire_-_nr_admiral.png" />
+    <None Remove="Resources\NewRepublic\hire_-_nr_general.png" />
+    <None Remove="Resources\NewRepublic\retirebase_-_general.png" />
+    <None Remove="Resources\NewRepublic\retirebase_-_nrofficer.png" />
+    <None Remove="Resources\Revpublic\hire_-_admiral.png" />
+    <None Remove="Resources\Shared\AdminHero.png" />
+    <None Remove="Resources\Shared\assign_-_pilot.png" />
+    <None Remove="Resources\Shared\hire_-_jedi.png" />
+    <None Remove="Resources\Shared\retirebase_-_jedi.png" />
+    <None Remove="Resources\Shared\SpymasterHero.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Fighters\squadrons_-_0.3x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Fighters\squadrons_-_0.5x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Fighters\squadrons_-_1x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Fighters\squadrons_-_2x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Fighters\squadrons_-_3x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Fighters\units_-_bomber.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\hire_-_admiral.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\hire_-_clone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\hire_-_clonecommando.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\hire_-_general.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\hire_-_moff.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\retirebase_-_admiral.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\retirebase_-_clone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\retirebase_-_clonecommando.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\retirebase_-_general.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\FotRepublic\retirebase_-_moff.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imperial\AdminLeader.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imperial\GoldBackground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imperial\Leader.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imperial\LeaderSSD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imperial\LeaderStructure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imperial\SpymasterLeader.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\infantry-ship_-_rocket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Infantry\infantry_-_assault.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Infantry\infantry_-_commander.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Infantry\infantry_-_elite_guard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Infantry\infantry_-_heavy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Infantry\infantry_-_sniper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Infantry\infantry_-_support.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_armored.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_armored_shielded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_battleship.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_carrier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_fighter_tender.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_fleet_tender.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_interdictor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_pdf.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_research.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_rocket-missile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_sensor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_shielded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_star_forge_refit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MiscUnits\units_-_weird_refit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\NewRepublic\hire_-_nr_admiral.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\NewRepublic\hire_-_nr_general.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\NewRepublic\retirebase_-_general.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\NewRepublic\retirebase_-_nrofficer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Revpublic\hire_-_admiral.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Shared\AdminHero.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Shared\assign_-_pilot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Shared\hire_-_jedi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Shared\retirebase_-_jedi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Shared\SIlverBackground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Shared\SpymasterHero.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Shared\SSD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Imperial\Warlord.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Output\" />
+  </ItemGroup>
+
+</Project>

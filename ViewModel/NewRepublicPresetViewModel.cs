@@ -1,0 +1,69 @@
+﻿namespace IconMakinator.ViewModel
+{
+    public class NewRepublicPresetViewModel : PresetViewModelBase
+    {
+        public override string DisplayName => "New Republic Preset";
+
+        private bool _hireAdmiral;
+        private bool _retireAdmiral;
+        private bool _hireGeneral;
+        private bool _retireGeneral;
+        private bool _hireJedi;
+        private bool _retireJedi;
+
+        public bool HireAdmiralNR
+        {
+            get => _hireAdmiral;
+            set
+            {
+                _hireAdmiral = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool RetireAdmiralNR
+        {
+            get => _retireAdmiral;
+            set
+            {
+                _retireAdmiral = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool HireGeneralNR
+        {
+            get => _hireGeneral;
+            set
+            {
+                _hireGeneral = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool RetireGeneralNR
+        {
+            get => _retireGeneral;
+            set
+            {
+                _retireGeneral = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool HireJediNR
+        {
+            get => _hireJedi;
+            set
+            {
+                _hireJedi = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool RetireJediNR
+        {
+            get => _retireJedi;
+            set
+            {
+                _retireJedi = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+}

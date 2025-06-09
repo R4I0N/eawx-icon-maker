@@ -1,0 +1,58 @@
+﻿<Window x:Class="IconMakinator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:IconMakinator.ViewModel"
+        xmlns:views="clr-namespace:IconMakinator.Views"
+        xmlns:local="clr-namespace:IconMakinator"
+        mc:Ignorable="d"
+        Title="IconMakinator" Height="450" Width="600" Background="{DynamicResource WindowBackground}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    
+    <StackPanel Margin="10">
+        <ComboBox ItemsSource="{Binding Presets}" SelectedItem="{Binding SelectedPreset}" DisplayMemberPath="DisplayName"/>
+        <ContentControl Content="{Binding SelectedPreset}">
+            <ContentControl.Resources>
+                <DataTemplate DataType="{x:Type vm:ImperialPresetViewModel}">
+                    <views:ImperialPresetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:NewRepublicPresetViewModel}">
+                    <views:NewRepublicPresetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:FotRepublicPresetViewModel}">
+                    <views:FotRepublicPresetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:RevpublicPresetViewModel}">
+                    <views:RevpublicPresetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:SharedPresetViewModel}">
+                    <views:SharedPresetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:FighterPresetViewModel}">
+                    <views:FighterPresetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:InfantryPresetViewModel}">
+                    <views:InfantryPresetView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:MiscUnitsPresetViewModel}">
+                    <views:MiscUnitsPresetView/>
+                </DataTemplate>
+            </ContentControl.Resources> 
+        </ContentControl>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <TextBlock Text="Unit Name: " Margin="0,0,10,0" Foreground="{DynamicResource TextForeground}"/>
+            <TextBox Text="{Binding SelectedPreset.ShortName, UpdateSourceTrigger=PropertyChanged}" Width="200"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button x:Name="SelectBaseImage" Content="Select Base Image" Width="250" Margin="0,0,10,0" Click="SelectBaseImage_Click" Foreground="{DynamicResource TextForeground}" Background="{DynamicResource WindowBackground}"/>
+            <Button x:Name="ApplyOverlay" Content="Apply Selected Overlays" Width="250" Click="ApplyOverlay_Click" Foreground="{DynamicResource TextForeground}" Background="{DynamicResource WindowBackground}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Image Source="{Binding SelectedPreset.ImagePreview}" Height="50" Width="50" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock Text="{Binding SelectedPreset.BaseImagePath}" Foreground="{DynamicResource TextForeground}" VerticalAlignment="Center" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Width="300"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
