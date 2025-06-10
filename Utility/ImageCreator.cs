@@ -29,7 +29,13 @@ namespace IconMakinator.Utility
             image.SaveAsTga(path, new TgaEncoder { BitsPerPixel = TgaBitsPerPixel.Pixel32 });
         }
 
-        public static void AllInOne(string baseImagePath, string? backgroundPath, string overlayPath, string outputPath)
+        public static string SaveAsPng(Image<Rgba32> image, string path)
+        {
+            image.SaveAsPng(path.Replace(".tga", ".png"), new SixLabors.ImageSharp.Formats.Png.PngEncoder());
+            return path.Replace(".tga", ".png");
+        }
+
+        public static string AllInOne(string baseImagePath, string? backgroundPath, string overlayPath, string outputPath)
         {
             if (baseImagePath is null || baseImagePath == string.Empty)
                 throw new NoImageSelectedException();
@@ -45,14 +51,16 @@ namespace IconMakinator.Utility
             }
             ApplyOverlay(image, overlayPath);
             SaveAsTga(image, outputPath);
+            return SaveAsPng(image, outputPath);
         }
 
         //flips the image because Bomber icons are flipped
-        public static void BomberSpecific(string baseImagePath, string outputPath)
+        public static string BomberSpecific(string baseImagePath, string outputPath)
         {
             var image = Image.Load<Rgba32>(baseImagePath);
             image.Mutate(i => i.Flip(FlipMode.Horizontal));
-            image.SaveAsPng(outputPath, new SixLabors.ImageSharp.Formats.Png.PngEncoder());
+            SaveAsTga(image, outputPath);
+            return SaveAsPng(image, outputPath);
         }
 
         public static void BasicTga(string baseImagePath, string outputPath)

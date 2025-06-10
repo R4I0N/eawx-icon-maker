@@ -171,9 +171,9 @@ namespace IconMakinator.ViewModel
                 string filepath = ConstructImageName(entry.DisplayName);
                 if (dictKey == "BomberSquadron")
                 {
-                    ImageCreator.BomberSpecific(BaseImagePath, filepath);
-                    SetImageProperty(filepath);
-                    ImageCreator.AllInOne(BaseImagePath, entry.BackgroundFilePath ?? "", entry.OverlayFilePath, filepath);
+                    var newPath = ImageCreator.BomberSpecific(BaseImagePath, filepath);
+                    var newPath2 = ImageCreator.AllInOne(newPath, entry.BackgroundFilePath ?? "", entry.OverlayFilePath, filepath);
+                    SetImageProperty(newPath2);
                 }
                 else
                 {
