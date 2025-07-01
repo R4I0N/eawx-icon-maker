@@ -11,6 +11,7 @@ namespace IconMakinator.ViewModel
     {
         private string? _baseImagePath;
         private BitmapImage? _imagePreview;
+        private string? _outputFolderPath;
         private string? _shortName;
         private readonly Dictionary<string, FileDetails> _filepaths = new()
         {
@@ -97,6 +98,16 @@ namespace IconMakinator.ViewModel
             {
                 _imagePreview = value;
                 OnPropertyChanged();
+            }
+        }
+
+        public string OutputFolderPath
+        {
+            get => _outputFolderPath!;
+            set
+            {
+                _outputFolderPath = value;
+                OnPropertyChanged(nameof(OutputFolderPath));
             }
         }
         public string ShortName
@@ -198,7 +209,7 @@ namespace IconMakinator.ViewModel
         {
             if (ShortName == null || ShortName == string.Empty)
                 throw new NoNameSetException();
-            string outputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Output", ShortName);
+            string outputPath = Path.Combine(OutputFolderPath, "Output", ShortName);
             Directory.CreateDirectory(outputPath);
             string display = string.IsNullOrEmpty(displayName) ? "" : $"_{displayName}";
             string finalFileName = Path.Combine(outputPath, $"i_button_{ShortName}{display}.tga");

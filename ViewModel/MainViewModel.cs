@@ -38,10 +38,11 @@ namespace IconMakinator.ViewModel
         {
             SelectedPreset?.SetImageProperty(filename);
         }
-        public bool? ApplyOverlays()
+        public bool? ApplyOverlays(string outputFolderPath)
         {
             try
             {
+                SelectedPreset.OutputFolderPath = outputFolderPath;
                 return SelectedPreset?.GenerateImage();
             }
             catch (NoOverlaySelectedException)

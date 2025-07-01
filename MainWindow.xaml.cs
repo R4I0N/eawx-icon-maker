@@ -34,7 +34,16 @@ namespace IconMakinator
         {
             try
             {
-                var result = ViewModel.ApplyOverlays();
+                bool? result = false;
+                var folderDialog = new OpenFolderDialog()
+                {
+                    Title = "Select folder to generate the files to",
+                    InitialDirectory = AppDomain.CurrentDomain.BaseDirectory
+                };
+                if (folderDialog.ShowDialog() == true)
+                {
+                    result = ViewModel.ApplyOverlays(folderDialog.FolderName);
+                }
                 if (result == true)
                 {
                     MessageBox.Show("Another happy landing", "Success");
