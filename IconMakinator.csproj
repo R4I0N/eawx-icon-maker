@@ -66,6 +66,8 @@
     <None Remove="Resources\Shared\hire_-_jedi.png" />
     <None Remove="Resources\Shared\retirebase_-_jedi.png" />
     <None Remove="Resources\Shared\SpymasterHero.png" />
+    <None Remove="UI\Shared\SIlverBackground.png" />
+    <None Remove="UI\Shared\SSD.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -235,9 +237,11 @@
     <Resource Include="UI\Shared\retirebase_-_jedi.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="UI\Shared\SIlverBackground.png" />
     <Resource Include="UI\Shared\SpymasterHero.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="UI\Shared\SSD.png" />
     <Content Include="Resources\Fighters\squadrons_-_0.3x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -401,12 +405,6 @@
     <Content Include="Resources\Shared\retirebase_-_jedi.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Resource Include="UI\Shared\SIlverBackground.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="UI\Shared\SSD.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
     <Content Include="Resources\Shared\SIlverBackground.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
