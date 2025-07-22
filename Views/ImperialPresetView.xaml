@@ -6,12 +6,30 @@
              xmlns:local="clr-namespace:IconMakinator.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UniformGrid Margin="5,50,5,50" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500">
-        <CheckBox Content="Leader" IsChecked="{Binding LeaderRing}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
-        <CheckBox Content="Leader SSD" IsChecked="{Binding LeaderSSD}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
-        <CheckBox Content="Leader Admin" IsChecked="{Binding LeaderAdmin}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
-        <CheckBox Content="Leader Spymaster" IsChecked="{Binding LeaderSpyMaster}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
-        <CheckBox Content="Leader Structure" IsChecked="{Binding LeaderStructure}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
-        <CheckBox Content="Warlord" IsChecked="{Binding WarlordRing}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
+    <UniformGrid Margin="5,25,5,10" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500">
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Imperial/Leader.png" Width="25" Height="25"/>
+            <CheckBox Content="Leader" IsChecked="{Binding LeaderRing}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Imperial/LeaderSSD.png" Width="25" Height="25"/>
+            <CheckBox Content="Leader SSD" IsChecked="{Binding LeaderSSD}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Imperial/AdminLeader.png" Width="25" Height="25"/>
+            <CheckBox Content="Leader Admin" IsChecked="{Binding LeaderAdmin}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Imperial/SpymasterLeader.png" Width="25" Height="25"/>
+            <CheckBox Content="Leader Spymaster" IsChecked="{Binding LeaderSpyMaster}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Imperial/LeaderStructure.png" Width="25" Height="25"/>
+            <CheckBox Content="Leader Structure" IsChecked="{Binding LeaderStructure}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Imperial/Warlord.png" Width="25" Height="25"/>
+            <CheckBox Content="Warlord" IsChecked="{Binding WarlordRing}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
+        </StackPanel>
     </UniformGrid>
 </UserControl>

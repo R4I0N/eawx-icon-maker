@@ -6,12 +6,30 @@
              xmlns:local="clr-namespace:IconMakinator.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UniformGrid Margin="5,50,5,50" Width="500" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <CheckBox Content="Assault" IsChecked="{Binding InfantryAssault}" Foreground="{DynamicResource TextForeground}" Margin="5" />
-        <CheckBox Content="Heavy" IsChecked="{Binding InfantryHeavy}" Foreground="{DynamicResource TextForeground}" Margin="5" />
-        <CheckBox Content="Sniper" IsChecked="{Binding InfantrySniper}" Foreground="{DynamicResource TextForeground}" Margin="5" />
-        <CheckBox Content="Support" IsChecked="{Binding InfantrySupport}" Foreground="{DynamicResource TextForeground}" Margin="5" />
-        <CheckBox Content="Elite" IsChecked="{Binding InfantryElite}" Foreground="{DynamicResource TextForeground}" Margin="5" />
-        <CheckBox Content="Commander" IsChecked="{Binding InfantryCommander}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+    <UniformGrid Margin="5,25,5,10" Width="500" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Infantry/infantry_-_assault.png" Width="25" Height="25"/>
+            <CheckBox Content="Assault" IsChecked="{Binding InfantryAssault}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Infantry/infantry_-_heavy.png" Width="25" Height="25"/>
+            <CheckBox Content="Heavy" IsChecked="{Binding InfantryHeavy}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Infantry/infantry_-_sniper.png" Width="25" Height="25"/>
+            <CheckBox Content="Sniper" IsChecked="{Binding InfantrySniper}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Infantry/infantry_-_support.png" Width="25" Height="25"/>
+            <CheckBox Content="Support" IsChecked="{Binding InfantrySupport}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Infantry/infantry_-_elite_guard.png" Width="25" Height="25"/>
+            <CheckBox Content="Elite" IsChecked="{Binding InfantryElite}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Infantry/infantry_-_commander.png" Width="25" Height="25"/>
+            <CheckBox Content="Commander" IsChecked="{Binding InfantryCommander}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+        </StackPanel>
     </UniformGrid>
 </UserControl>
