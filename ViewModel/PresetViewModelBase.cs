@@ -28,9 +28,9 @@ namespace IconMakinator.ViewModel
             { "SpyMasterRing", new FileDetails{DisplayName = "spymaster", OverlayFilePath = "Resources/Shared/SpymasterHero.png", BackgroundFilePath = "Resources/Shared/SilverBackground.png"}},
             { "FighterHero", new FileDetails{DisplayName = "assign", OverlayFilePath = "Resources/Shared/assign_-_pilot.png"}},
             //New Republic
-            { "HireSupComNR", new FileDetails{DisplayName = "command_sup", OverlayFilePath = "Resources/NewRepublic/hire_-_nr_admiral.png"}},
-            { "HireHighComNR", new FileDetails{DisplayName = "command_high", OverlayFilePath = "Resources/NewRepublic/hire_-_nr_commander.png"}},
-            { "HireFleetNR", new FileDetails{DisplayName = "command_fleet", OverlayFilePath = "Resources/NewRepublic/hire_-_nr_captain.png"}},
+            { "HireSupComNR", new FileDetails{DisplayName = "sup_command", OverlayFilePath = "Resources/NewRepublic/hire_-_nr_admiral.png"}},
+            { "HireHighComNR", new FileDetails{DisplayName = "high_command", OverlayFilePath = "Resources/NewRepublic/hire_-_nr_commander.png"}},
+            { "HireFleetNR", new FileDetails{DisplayName = "fleet_command", OverlayFilePath = "Resources/NewRepublic/hire_-_nr_captain.png"}},
             { "RetireAdmiralNR", new FileDetails{DisplayName = "retire", OverlayFilePath = "Resources/NewRepublic/retirebase_-_nrofficer.png"}},
             { "HireGeneralNR", new FileDetails{DisplayName = "command", OverlayFilePath = "Resources/NewRepublic/hire_-_nr_general.png"}},
             { "RetireGeneralNR", new FileDetails{DisplayName = "retire", OverlayFilePath = "Resources/NewRepublic/retirebase_-_general.png"}},
