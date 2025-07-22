@@ -8,51 +8,51 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <UniformGrid Margin="5,25,5,10" Width="500" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center">
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/hire_-_admiral.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/hire_-_admiral.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Admiral" IsChecked="{Binding HireAdmiral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/retirebase_-_admiral.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/retirebase_-_admiral.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Admiral" IsChecked="{Binding RetireAdmiral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/hire_-_moff.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/hire_-_moff.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Moff" IsChecked="{Binding HireMoff}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/retirebase_-_moff.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/retirebase_-_moff.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Moff" IsChecked="{Binding RetireMoff}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/hire_-_clone.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/hire_-_clone.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Clone" IsChecked="{Binding HireClone}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/retirebase_-_clone.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/retirebase_-_clone.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Clone" IsChecked="{Binding RetireClone}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/hire_-_clonecommando.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/hire_-_clonecommando.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Commando" IsChecked="{Binding HireCommando}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/retirebase_-_clonecommando.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/retirebase_-_clonecommando.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Commando" IsChecked="{Binding RetireCommando}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/hire_-_general.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/hire_-_general.png" Width="25" Height="25"/>
             <CheckBox Content="Hire General" IsChecked="{Binding HireGeneral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/retirebase_-_general.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/retirebase_-_general.png" Width="25" Height="25"/>
             <CheckBox Content="Retire General" IsChecked="{Binding RetireGeneral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/hire_-_jedi.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/hire_-_jedi.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Jedi" IsChecked="{Binding HireJedi}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/retirebase_-_jedi.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/retirebase_-_jedi.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Jedi" IsChecked="{Binding RetireJedi}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
     </UniformGrid>

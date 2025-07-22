@@ -8,19 +8,19 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <UniformGrid Margin="5,25,5,10" Width="500" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center">
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Revpublic/hire_-_admiral.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Revpublic/hire_-_admiral.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Admiral" IsChecked="{Binding HireAdmiralRev}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/FotRepublic/retirebase_-_admiral.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/FotRepublic/retirebase_-_admiral.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Admiral" IsChecked="{Binding RetireAdmiralRev}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/hire_-_jedi.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/hire_-_jedi.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Jedi" IsChecked="{Binding HireJediRev}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/retirebase_-_jedi.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/retirebase_-_jedi.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Jedi" IsChecked="{Binding RetireJediRev}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
     </UniformGrid>

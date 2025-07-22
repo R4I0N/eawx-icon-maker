@@ -8,20 +8,20 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <UniformGrid Margin="5,25,5,10" Width="500" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center">
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/SpymasterHero.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/SpymasterHero.png" Width="25" Height="25"/>
             <CheckBox Content="Spy Master" IsChecked="{Binding SpyMasterRing}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/AdminHero.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/AdminHero.png" Width="25" Height="25"/>
             <CheckBox Content="Administrator" IsChecked="{Binding AdminRing}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
         </StackPanel>
         <!--<CheckBox Content="Agent" IsChecked="{Binding AgentRing}" Foreground="{DynamicResource TextForeground}" Margin="5"/>-->
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/SSD.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/SSD.png" Width="25" Height="25"/>
             <CheckBox Content="SSD" IsChecked="{Binding JustSSD}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/assign_-_pilot.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/assign_-_pilot.png" Width="25" Height="25"/>
             <CheckBox Content="Fighter Hero" IsChecked="{Binding FighterHero}" Foreground="{DynamicResource TextForeground}" Margin="5"/>
         </StackPanel>
     </UniformGrid>

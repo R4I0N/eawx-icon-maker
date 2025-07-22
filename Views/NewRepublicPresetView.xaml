@@ -8,35 +8,35 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <UniformGrid Margin="5,25,5,10" Width="500" Rows="4" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Center">
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/NewRepublic/hire_-_nr_admiral.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/NewRepublic/hire_-_nr_admiral.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Sup Com" IsChecked="{Binding HireSupComNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/NewRepublic/hire_-_nr_captain.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/NewRepublic/hire_-_nr_captain.png" Width="25" Height="25"/>
             <CheckBox Content="Hire High Com" IsChecked="{Binding HireHighComNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/NewRepublic/hire_-_nr_commander.png" Width="25" Height="25"/>
-            <CheckBox Content="Hire Admiral" IsChecked="{Binding HireFleetOfficerNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+            <Image Source="pack://application:,,,/UI/NewRepublic/hire_-_nr_commander.png" Width="25" Height="25"/>
+            <CheckBox Content="Hire Admiral" IsChecked="{Binding HireFleetNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/NewRepublic/retirebase_-_nrofficer.png" Width="25" Height="25"/>
-            <CheckBox Content="Retire Admiral" IsChecked="{Binding RetireAdmiral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+            <Image Source="pack://application:,,,/UI/NewRepublic/retirebase_-_nrofficer.png" Width="25" Height="25"/>
+            <CheckBox Content="Retire Admiral" IsChecked="{Binding RetireAdmiralNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/NewRepublic/hire_-_nr_general.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/NewRepublic/hire_-_nr_general.png" Width="25" Height="25"/>
             <CheckBox Content="Hire General" IsChecked="{Binding HireGeneral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/NewRepublic/retirebase_-_general.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/NewRepublic/retirebase_-_general.png" Width="25" Height="25"/>
             <CheckBox Content="Retire General" IsChecked="{Binding RetireGeneral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/hire_-_jedi.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/hire_-_jedi.png" Width="25" Height="25"/>
             <CheckBox Content="Hire Jedi" IsChecked="{Binding HireJedi}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Shared/retirebase_-_jedi.png" Width="25" Height="25"/>
+            <Image Source="pack://application:,,,/UI/Shared/retirebase_-_jedi.png" Width="25" Height="25"/>
             <CheckBox Content="Retire Jedi" IsChecked="{Binding RetireJedi}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
     </UniformGrid>

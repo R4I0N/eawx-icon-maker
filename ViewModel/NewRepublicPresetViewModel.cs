@@ -6,7 +6,7 @@
 
         private bool _hireSupCom;
         private bool _hireHighCom;
-        private bool _hireOfficer;
+        private bool _hireFleetNR;
         private bool _retireAdmiral;
         private bool _hireGeneral;
         private bool _retireGeneral;
@@ -31,12 +31,12 @@
                 OnPropertyChanged();
             }
         }
-        public bool HireFleetOfficerNR
+        public bool HireFleetNR
         {
-            get => _hireOfficer;
+            get => _hireFleetNR;
             set
             {
-                _hireOfficer = value;
+                _hireFleetNR = value;
                 OnPropertyChanged();
             }
         }
