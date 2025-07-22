@@ -71,8 +71,7 @@
   <ItemGroup>
     <Resource Include="UI\Fighters\squadrons_-_0.3x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Resource>
+    </Resource> 
     <Resource Include="UI\Fighters\squadrons_-_0.5x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
