@@ -401,12 +401,12 @@
     <Content Include="Resources\Shared\retirebase_-_jedi.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="UI\Shared\SIlverBackground.png">
+    <Resource Include="UI\Shared\SIlverBackground.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Shared\SSD.png">
+    </Resource>
+    <Resource Include="UI\Shared\SSD.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Resource>
     <Content Include="Resources\Shared\SIlverBackground.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
