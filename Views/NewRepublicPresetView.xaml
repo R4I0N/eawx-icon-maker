@@ -25,19 +25,19 @@
         </StackPanel>
         <StackPanel Orientation="Vertical">
             <Image Source="pack://application:,,,/UI/NewRepublic/hire_-_nr_general.png" Width="25" Height="25"/>
-            <CheckBox Content="Hire General" IsChecked="{Binding HireGeneral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+            <CheckBox Content="Hire General" IsChecked="{Binding HireGeneralNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
             <Image Source="pack://application:,,,/UI/NewRepublic/retirebase_-_general.png" Width="25" Height="25"/>
-            <CheckBox Content="Retire General" IsChecked="{Binding RetireGeneral}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+            <CheckBox Content="Retire General" IsChecked="{Binding RetireGeneralNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
             <Image Source="pack://application:,,,/UI/Shared/hire_-_jedi.png" Width="25" Height="25"/>
-            <CheckBox Content="Hire Jedi" IsChecked="{Binding HireJedi}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+            <CheckBox Content="Hire Jedi" IsChecked="{Binding HireJediNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
         <StackPanel Orientation="Vertical">
             <Image Source="pack://application:,,,/UI/Shared/retirebase_-_jedi.png" Width="25" Height="25"/>
-            <CheckBox Content="Retire Jedi" IsChecked="{Binding RetireJedi}" Foreground="{DynamicResource TextForeground}" Margin="5" />
+            <CheckBox Content="Retire Jedi" IsChecked="{Binding RetireJediNR}" Foreground="{DynamicResource TextForeground}" Margin="5" />
         </StackPanel>
     </UniformGrid>
 </UserControl>

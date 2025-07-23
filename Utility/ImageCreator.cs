@@ -31,8 +31,8 @@ namespace IconMakinator.Utility
 
         public static string SaveAsPng(Image<Rgba32> image, string path)
         {
-            image.SaveAsPng(path.Replace(".tga", ".png"), new SixLabors.ImageSharp.Formats.Png.PngEncoder());
-            return path.Replace(".tga", ".png");
+            image.SaveAsPng(path.Replace(".TGA", ".png"), new SixLabors.ImageSharp.Formats.Png.PngEncoder());
+            return path.Replace(".TGA", ".png");
         }
 
         public static string AllInOne(string baseImagePath, string? backgroundPath, string overlayPath, string outputPath)

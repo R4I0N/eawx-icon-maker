@@ -29,7 +29,8 @@ namespace IconMakinator.ViewModel
                 new SharedPresetViewModel(),
                 new FighterPresetViewModel(),
                 new InfantryPresetViewModel(),
-                new MiscUnitsPresetViewModel()
+                new MiscUnitsPresetViewModel(),
+                new AlphanumericPresetViewModel()
             };
             SelectedPreset = Presets.First();
         }

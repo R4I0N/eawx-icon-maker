@@ -81,7 +81,12 @@ namespace IconMakinator.ViewModel
             { "Research", new FileDetails{DisplayName = "research", OverlayFilePath = "Resources/MiscUnits/units_-_research.png"}},
             { "Sensor", new FileDetails{DisplayName = "sensor", OverlayFilePath = "Resources/MiscUnits/units_-_sensor.png"}},
             { "StarForge", new FileDetails{DisplayName = "starforge", OverlayFilePath = "Resources/MiscUnits/units_-_star_forge_refit.png"}},
-            { "Refit", new FileDetails{DisplayName = "refit", OverlayFilePath = "Resources/MiscUnits/units_-_weird_refit.png"}}
+            { "Refit", new FileDetails{DisplayName = "refit", OverlayFilePath = "Resources/MiscUnits/units_-_weird_refit.png"}},
+            //Alphanumeric
+            { "RomanOne", new FileDetails{DisplayName = "_i", OverlayFilePath = "Resources/Alphanumeric/units_-_v.1.png"}},
+            { "RomanTwo", new FileDetails{DisplayName = "_ii", OverlayFilePath = "Resources/Alphanumeric/units_-_v.2.png"}},
+            { "RomanThree", new FileDetails{DisplayName = "_iii", OverlayFilePath = "Resources/Alphanumeric/units_-_v.3.png"}},
+            { "RomanFour", new FileDetails{DisplayName = "_iv", OverlayFilePath = "Resources/Alphanumeric/units_-_v.4.png"}}
         };
         public abstract string DisplayName { get; }
         public string BaseImagePath
@@ -214,9 +219,9 @@ namespace IconMakinator.ViewModel
             string outputPath = Path.Combine(OutputFolderPath, "Output", ShortName);
             Directory.CreateDirectory(outputPath);
             string display = string.IsNullOrEmpty(displayName) ? "" : $"_{displayName}";
-            string finalFileName = Path.Combine(outputPath, $"i_button_{ShortName}{display}.tga");
+            string finalFileName = Path.Combine(outputPath, $"i_button_{ShortName}{display}.tga".ToUpper());
 
-            return finalFileName.ToLower();
+            return finalFileName;
         }
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = "") =>

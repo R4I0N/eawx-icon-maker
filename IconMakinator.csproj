@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Alphanumeric\units_-_v.1.png" />
+    <None Remove="Resources\Alphanumeric\units_-_v.2.png" />
+    <None Remove="Resources\Alphanumeric\units_-_v.3.png" />
+    <None Remove="Resources\Alphanumeric\units_-_v.4.png" />
     <None Remove="Resources\Fighters\squadrons_-_0.3x.png" />
     <None Remove="Resources\Fighters\squadrons_-_0.5x.png" />
     <None Remove="Resources\Fighters\squadrons_-_1x.png" />
@@ -66,9 +70,17 @@
     <None Remove="Resources\Shared\hire_-_jedi.png" />
     <None Remove="Resources\Shared\retirebase_-_jedi.png" />
     <None Remove="Resources\Shared\SpymasterHero.png" />
+    <None Remove="UI\Alphanumeric\units_-_v.1.png" />
+    <None Remove="UI\Alphanumeric\units_-_v.2.png" />
+    <None Remove="UI\Alphanumeric\units_-_v.3.png" />
+    <None Remove="UI\Alphanumeric\units_-_v.4.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="UI\Alphanumeric\units_-_v.1.png" />
+    <Resource Include="UI\Alphanumeric\units_-_v.2.png" />
+    <Resource Include="UI\Alphanumeric\units_-_v.3.png" />
+    <Resource Include="UI\Alphanumeric\units_-_v.4.png" />
     <Resource Include="UI\Fighters\squadrons_-_0.3x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource> 
@@ -237,6 +249,18 @@
     <Resource Include="UI\Shared\SpymasterHero.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Content Include="Resources\Alphanumeric\units_-_v.1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Alphanumeric\units_-_v.2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Alphanumeric\units_-_v.3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Alphanumeric\units_-_v.4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Fighters\squadrons_-_0.3x.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
